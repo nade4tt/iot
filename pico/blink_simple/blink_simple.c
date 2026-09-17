@@ -9,11 +9,11 @@ int main() {
 
     while (true) {
         gpio_put(LED_PIN, 1);
-        printf("LED ON");
+        printf("LED ON\n");
         sleep_ms(1000);
 
         gpio_put(LED_PIN, 0);
-        printf("LED OFF");
+        printf("LED OFF\n");
         sleep_ms(1000);
     }
 }

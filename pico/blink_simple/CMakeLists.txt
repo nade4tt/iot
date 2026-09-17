@@ -5,7 +5,6 @@ include(pico_sdk_import.cmake)
 project(blink_simple  C CXX ASM)
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_STANDARD 17)
-
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON) # Generates compile_commands.json (for neovim lsp)
 
 pico_sdk_init()
@@ -19,6 +18,3 @@ pico_add_extra_outputs(blink_simple)    # Generates .uf2/.hex/.bin/.map alongsid
 
 # Link standard hardware libraries
 target_link_libraries(blink_simple  pico_stdlib)
-
-# Create .uf2, .hex, and .bin build targets
-pico_add_extra_outputs(blink_simple )
